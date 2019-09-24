@@ -20,10 +20,11 @@ bindkey -v
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export LOCATE_PATH="$HOME/var/mlocate.db"
-alias updatedb="sudo updatedb -e /home/.ecryptfs && updatedb -l 0 -o $HOME/var/mlocate.db -U $HOME"
 alias wine32="WINEARCH=win32 WINEPREFIX=${HOME}/win32"
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+alias vpn="netExtender -u jacobg -d wonderlic sslvpn.wonderlic.com:4433"
+
+# compctl -m npx
 
 powerline-daemon -q
 # . /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh 
